@@ -8,16 +8,16 @@ const Card = ({ data }) => {
   
   return (
     <div className="cardContainer">
-      {data.map((item, index) => {
+      {data.map((item) => {
         return (
           
-          <div className="card" key={index}>
-           {item.image && <img src={item.image} alt="news"/>} 
+          <div className="card" key={item.article_id}>
+           {item.image_url && <img src={item.image_url} alt="news"/>} 
 
             <div className="content">
-              <a className="title" onClick={() => window.open(item.url, "_blank")}>{item.title}</a>
-              <p>{item.description}</p>
-              <button onClick={() => window.open(item.url, "_blank")}>Read More</button>
+              <a className="title" onClick={() => window.open(item.link, "_blank")}>{item.title}</a>
+              <p className='description'>{item.description}</p>
+              <button onClick={() => window.open(item.link, "_blank")}>Read More</button>
             </div>
 
           </div>

@@ -5,14 +5,15 @@ const NewsApp = () => {
   const [search, setSearch] = React.useState("india");
   const [data, setData] = React.useState([]);
 
-  const API_KEY = "8b0f6b7c554148420386c9f4d820d32b";
+  const API_KEY = "pub_4e6129c445714301bd20805402b632b5";
 
   const getData = async () => {
     const response = await fetch(
-      `https://gnews.io/api/v4/search?q=${search}&lang=en&country=us&max=10&apikey=${API_KEY}`,
+      `https://newsdata.io/api/1/latest?apikey=${API_KEY}&q=${search}`,
     );
-    const result = await response.json();
-    setData(result.articles);
+    const data = await response.json();
+   
+    setData(data.results);
   };
 
   // News fetch on component mount

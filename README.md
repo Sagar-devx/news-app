@@ -4,11 +4,11 @@ News App is a modern and responsive React application that displays the latest n
 
 ## Features 
 
-News displayed in cards with image, title, and description.
-Clickable title and "Read More" button to open full articles in a new tab.
-Responsive design for all screen sizes.
-Handles empty news data gracefully by showing "No News Available".
-Simple and clean UI for better readability.
+News displayed in cards with image, title, and description.<br>
+Clickable title and "Read More" button to open full articles in a new tab.<br>
+Responsive design for all screen sizes.<br>
+Handles empty news data gracefully by showing "No News Available".<br>
+Simple and clean UI for better readability.<br>
 
 ## Tech Stack
 
@@ -20,23 +20,23 @@ Deployment: Vercel<br>
 
 Follow these steps to run the project locally:
 
-## Clone the repository:
+1) Clone the repository:
 
-git clone https://github.com/<your-username>/news-app.git
+     git clone https://github.com/<your-username>/news-app.git
 
-## Navigate to the project folder:
+2) Navigate to the project folder:
 
-cd news-app
+      cd news-app
 
-## Install dependencies:
+3) Install dependencies:
 
-npm install
+      npm install
 
-## Start the development server:
+4) Start the development server:
 
-npm start
+      npm start
 
-Open http://localhost:3000 in your browser to view the app.
+5) Open http://localhost:3000 in your browser to view the app.
 
 ## Deployment 
 

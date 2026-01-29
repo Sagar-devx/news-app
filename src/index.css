@@ -1,0 +1,262 @@
+body {
+  margin: 0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: lightblue;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+nav input {
+  width: 250px;
+  padding: 9px;
+  border-radius: 15px;
+  font-size: 18px;
+  border: none;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+nav button {
+  width: 70px;
+  height: 38px;
+  background-color: blue;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  gap: 11px;
+  flex-wrap: wrap;
+}
+
+nav ul a {
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+nav ul a:hover {
+  background-color: white;
+  color: black;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.card {
+  width: 320px;
+  box-shadow: 0px 4px 4px 4px rgb(255, 255, 255);
+  background-color: white;
+  border-radius: 3px;
+  margin-top: 21px;
+  border: 1px solid rgb(236, 236, 236);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.card .title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: -7px;
+}
+
+.card .title:hover {
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+.card .content {
+  padding: 9px;
+}
+
+.card button {
+  background-color: rgb(29, 162, 214);
+  border: none;
+  cursor: pointer;
+  width: 80px;
+  height: 28px;
+  color: white;
+  font-size: 13px;
+  border-radius: 2px;
+}
+
+.categoryBtn {
+  display: flex;
+  justify-content: center;
+  gap: 11px;
+  flex-wrap: wrap;
+}
+
+.categoryBtn button {
+  width: 130px;
+  height: 33px;
+  background-color: rgb(255, 108, 108);
+  border: none;
+  font-size: 18px;
+  border-radius: 16px;
+  color: white;
+  cursor: pointer;
+  padding: 2px;
+  transition: 0.3s ease;  
+}
+
+.categoryBtn button:hover {
+  background-color: white;             
+  color: rgb(255, 108, 108);           
+  border: 2px solid rgb(255, 108, 108); 
+  transform: translateY(-2px);       
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.12); 
+}
+
+
+.head {
+  text-align: center;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.card.no-image {
+  width: 320px;
+  min-height: 250px;
+  padding: 15px;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.card.no-image p {
+  font-size: 14px;
+  color: red;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card.no-image .title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  margin-bottom: 8px;
+  text-decoration: underline;
+}
+
+.card.no-image button {
+  width: 120px;
+  padding: 8px 12px;
+  background: rgb(255, 108, 108);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.card.no-image button:hover {
+  background: #ff4a4a;
+}
+
+
+/* Responsiveness */
+
+/* Tablets (max width 900px) */
+
+@media (max-width: 900px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav input {
+    width: 90%;
+  }
+
+  .searchBar {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .cardContainer {
+    gap: 20px;
+  }
+
+  .card {
+    width: 280px;
+  }
+}
+
+/* Mobile Screens (max width 600px) */
+
+@media (max-width: 600px) {
+  nav {
+    padding: 15px;
+  }
+
+  nav input {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  nav button {
+    width: 80px;
+    height: 35px;
+    font-size: 15px;
+  }
+
+  .searchBar {
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .card {
+    width: 95%;
+  }
+
+  .card img {
+    height: 160px;
+  }
+
+  .categoryBtn button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .head {
+    font-size: 22px;
+  }
+}

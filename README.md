@@ -36,9 +36,9 @@ Follow these steps to run the project locally:
 
       npm run dev
 
-5) Open http://localhost:3000 in your browser to view the app.
+5) Open http://localhost:5173/ in your browser to view the app.
 
 ## Deployment 
 
-This app is deployed on Vercel and can be accessed here:
+This app is deployed on Vercel and can be accessed here:<br>
 https://news-app-alpha-sage.vercel.app/

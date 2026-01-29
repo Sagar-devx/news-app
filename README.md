@@ -1,18 +1,44 @@
-# React + Vite
+# News App 📰
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+News App is a modern and responsive React application that displays the latest news articles in a clean and user-friendly card layout. Users can read headlines, descriptions, and open full articles in a new tab. The app is fully responsive and optimized for mobile, tablet, and desktop devices.
 
-Currently, two official plugins are available:
+## Features 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+News displayed in cards with image, title, and description.
+Clickable title and "Read More" button to open full articles in a new tab.
+Responsive design for all screen sizes.
+Handles empty news data gracefully by showing "No News Available".
+Simple and clean UI for better readability.
 
-## React Compiler
+## Tech Stack 
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+Frontend: React.js
+Styling: CSS
+Deployment: Vercel
 
-Note: This will impact Vite dev & build performances.
+## Installation and Setup 
 
-## Expanding the ESLint configuration
+Follow these steps to run the project locally:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Clone the repository:
+
+git clone https://github.com/<your-username>/news-app.git
+
+## Navigate to the project folder:
+
+cd news-app
+
+## Install dependencies:
+
+npm install
+
+## Start the development server:
+
+npm start
+
+Open http://localhost:3000 in your browser to view the app.
+
+## Deployment 
+
+This app is deployed on Vercel and can be accessed here:
+https://news-app-alpha-sage.vercel.app/

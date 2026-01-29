@@ -10,11 +10,11 @@ Responsive design for all screen sizes.
 Handles empty news data gracefully by showing "No News Available".
 Simple and clean UI for better readability.
 
-## Tech Stack 
+## Tech Stack
 
-Frontend: React.js
-Styling: CSS
-Deployment: Vercel
+Frontend: React.js<br>
+Styling: CSS<br>
+Deployment: Vercel<br>
 
 ## Installation and Setup 
 
